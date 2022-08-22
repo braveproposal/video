@@ -1,0 +1,17 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /
+    # session 失效時間，m 表示分鐘，如果不寫單位，默認是秒 s
+    session:
+      timeout: 20m
+    # jsp 修改後無需重新發布
+    jsp:
+      init-parameters:
+        development: true
+
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/view/
+      suffix: .jsp
